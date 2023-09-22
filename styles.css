@@ -15,13 +15,13 @@
 }
 body{
     background:var(--color1);
-    background-size: 100px 100px; 
+    background-size: 100vw 100vw; 
     color: #fff;
     /* overflow-x: hidden; */
 }
 header{
     height:5vh;
-    padding-top: 3rem;
+    padding-top: 3vw;
 }
 header nav, header div, header nav ul{
     display:flex;
@@ -32,21 +32,24 @@ header nav div, header nav ul li, header button {
     cursor:pointer;
 }
 header nav{
-    padding-bottom: 1rem;
+    padding-bottom: 1vw;
     border-bottom: var(--color2) solid 1px;
 }
 header nav div{
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     font-weight: bolder;
 }
-header nav div span{
+header nav div a{
+    text-decoration: none;
+}
+header nav div a span{
     color: var(--color3);
 }
 header nav ul{
-    margin: 0 20rem 0 30rem;
+    margin: 0 20vw 0 30vw;
 }
 header nav ul li{
-    margin-left: 1rem;
+    margin-left: 1vw;
     transition: 1s ease-in-out;
     
 }
@@ -60,7 +63,7 @@ header button {
     width: 7%;
     border: var(--primary) solid 1px;
     border-radius: 5%;
-    background-size: 120%; 
+    background-size: 120vw; 
     transition: background-position 1s ease-in-out; 
 }
 header button:hover {
@@ -75,7 +78,7 @@ main section{
 }
 main section .moto{
     text-align: end;
-    font-size: 2.4rem;
+    font-size: 2.4vw;
     font-style: italic;
     padding:2rem 0 0 6.6rem;
 } 
@@ -84,68 +87,68 @@ main section  .Hero{
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 main section  .Hero div:first-child{
-    padding-top:10rem ;
+    padding-top:10vw ;
 }
 main section  .Hero .heroIntro {
-    font-size: 5rem;
+    font-size: 5vw;
 }
 main section .heroIntro span{
     color: var(--color3)
 }
 main section .Hero img{
-    width:13%;
+    width:5vw;
 }
 main section .Hero .para{
     font-size: 1.3rem;
-    width: 80%;
+    width: 40vw;
 }
 main section .timer{
-    font-size: 2rem;
-    margin-top: 1.5rem;
+    font-size: 2vw;
+    margin-top: 1.5vw;
 }
 main section .timer span{
-    font-size: .8rem;
+    font-size: .8vw;
     font-family: 'Digital-7', sans-serif;
-    margin-right: 1rem;
+    margin-right: 1vw;
 }
 main section .Hero .heroImage{
     background-image: url(images/Untitled-1-removebg-preview.png); 
     background-repeat: no-repeat, no-repeat;
-    background-size:54rem;
+    background-size:54vw;
     background-position: left;
     width:100vw;
     height:90vh
 }
 main section .Hero .heroImage img{
-    width:50%;
-    margin-top: -5rem;
-    opacity: .5
+    width:50vw;
+    margin-top: -5vw;
+    opacity: .5;
 }
 main .subSection{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(38vw, 1fr));
 }
 
 main .subSection div img{
-    width:90%;
+    width:35vw;
 }
 main .subSection div h2{
-    margin: 15rem 0 1rem 0;
+    margin: 15vw 0 1vw 0;
 }
 main .subSection div img{
-    margin-top: 7rem;
+    margin-top: 7vw;
 }
 main .subSection:nth-last-child(7) div h2, main .subSection:nth-last-child(6) div h2, main .subSection:nth-last-child(3) div h2, main .subSection:nth-last-child(1) div h2{
-    margin-top: 3rem;
+    margin-top: 3vw;
 }
 main .subSection:nth-last-child(1) div p{
-    width:55%;
+    width:55vw;
 }
 main .subSection div h2 span{
     color: var(--color3)
 }
 main .subSection div p{
-    width: 85%;
+    width: 35vw;
     text-align: justify;
 }
 main .subSection div p span{
@@ -154,18 +157,18 @@ main .subSection div p span{
 }
 
 main .subSection div .faq{
-    margin: 4rem 0 0 0;
+    margin: 4vw 0 0 0;
 }
 main .subSection div .faq .faqs{
-    margin-top: 2rem;
-    width: 80%;
-    height: 3rem;
+    margin-top: 2vw;
+    width: 35vw;
+    height: 6vh;
     display: grid;
     grid-template-columns: 90% 10%;
     border-bottom: var(--color3) solid 1.5px;
 }
 main .subSection div .faq .faqs p{
-    width:95%
+    width:95vw
 }
 main .subSection div .faq .faqs span{
     text-align: end;
@@ -181,11 +184,11 @@ main .timeline h3, main .timeline p{
 
 main .timeline .timetabe{
     display:grid;
-    grid-template-columns: 45% 10% 45%;
-    margin-top: 10rem;
+    grid-template-columns: 38vw 8.5vw 38vw;
+    margin-top: 10vw;
 }
 main .timeline .timetabe .time1 div, main .timeline .timetabe .time3 div {
-    margin-bottom: 3rem;
+    margin-bottom: 3vw;
 }
 main .timeline .timetabe .time1,main .timeline .time1 h3, main .timeline .time1 p{
     text-align: end;
@@ -197,27 +200,27 @@ main .timeline .timetabe div:nth-child(2){
     text-align: center;
 }
 main .timeline .timetabe div:nth-child(2) .line{
-    width:.3rem;
-    height:75vh;
+    width:.3vw;
+    height:85vh;
     background: var(--color3);
-    margin: -5rem 0 0 4.2rem;
+    margin: -5vw 0 0 4.2vw;
     position: absolute;
     z-index: -1;
 }
 main .timeline .timetabe div:nth-child(2) div{
-    margin-bottom: 3rem;
+    margin-bottom: 3vw;
 }
 main .timeline .timetabe div:nth-child(2) div .number{
     border: var(--color1) solid 10px;
-    border-radius: 100%;
+    border-radius: 100vw;
     background: var(--primary);
-    margin:0 2.2rem;
-    padding: .5rem .2rem;
+    margin:0 2.2vw;
+    padding: .6vw .3vw;
     font-weight: bolder;
     text-align: center;
 }
 main .timeline .timetabe .time3{
-    margin-top: 2rem;
+    margin-top: 2vw;
 }
 main .timeline .timetabe .time3 div h3, main .timeline .timetabe .time3 div p{
     text-align: left;
@@ -230,18 +233,18 @@ main .PandP{
    
 }
 main .PandP h2, main .PandP p{
-    margin:0 30%;
+    margin:0 30vw;
 }
 main .PandPcon{
-    margin: 4rem 10rem;
+    margin: 4vw 10vw;
     border: var(--color3) solid 1px;
     border-radius: 2rem;
-    width:80%;
+    width:65vw;
     height:50vh;
 }
 main .PandPcon img{
-    margin: -2rem 0 0 -2rem;
-    width:70rem;
+    margin: -2vw 0 0 -2vw;
+    width:70vw;
 }
 #subsec{
     height:120vh;
@@ -249,38 +252,41 @@ main .PandPcon img{
 #subsec div:nth-child(2){
     background-image: url(images/Untitled-2-removebg-preview.png);
     background-repeat:  no-repeat, no-repeat;
-    background-size: 31rem;
+    background-size: 31vw;
 
 }
-main .subSection .firstPara p{
-    margin-bottom: 2rem;
+main .subSection .firstPara .Paras{
+    margin-bottom: 2vw;
+    width: 34vw;
 }
+
 main .subSection .firstPara .PPandT{
     border: var(--color3) solid 1px;
     border-radius: 2rem;
-    width:70%;
-    height:55vh;
-    padding:5rem;
+    width:28vw;
+    height:59vh;
+    padding:5vw;
 }
 main .subSection .firstPara .PPandT p{
-    width:100%
+    width:28vw;
+    margin-bottom: 2vh;
 }
 main .subSection .firstPara .PPandT h3{
     color:var(--color3)
 }
 main .subSection .firstPara .PPandT ul li{
-    margin-bottom: 1rem;
+    margin-bottom: 1vw;
 }
 #faqImage{
-    margin-top: -8rem;
+    margin-top: -8vw;
 }
 #readMore{
-    width:22%;
-    margin: 1rem 10rem
+    width:10vw;
+    margin: 1vw 10vw
 }
 footer{
-    padding:2rem 8rem 0 6.6rem;
-    width: 100%;
+    padding:2vw 8vw 0 6.6vw;
+    width: 100vw;
 
 }
 footer .footing{
@@ -288,39 +294,39 @@ footer .footing{
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 footer .footing div{
-    margin: 0 10rem 0 0
+    margin: 0 10vw 0 0
 }
 footer .footing div .Fpara{
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     font-weight: bolder;
-    margin-bottom: 1rem;
+    margin-bottom: 1vw;
 }
 footer .footing div .Fpara span{
     color: var(--color3);
 }
 footer .footing .Fmore1 p{
-    margin-top: 1rem;
+    margin-top: 1vw;
 }
 footer .footing .Fmore1 span{
     color:var(--color3);
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 2vw;
 }
 footer .copyRight{
-    margin:2rem 20%;
+    margin:2rem 20vw;
 }
 
 /* Special Effects */
 .btn{
     background: var(--primary);
     color: inherit;
-    font-size: 1rem;
-    width: 20%;
-    margin-top: 1.5rem;
-    padding:.5rem;
+    font-size: 1vw;
+    width: 10vw;
+    margin-top: 1.5vw;
+    padding:.5vw;
     border: var(--primary) solid 1px;
     border-radius: 5%;
-    background-size: 120%; 
+    background-size: 120vw; 
     transition: background-position 1s ease-in-out;
     cursor: pointer;
 }
@@ -335,66 +341,41 @@ footer .copyRight{
     z-index: -1;
 }
 .gradient div{
-    width: 30rem ;
-    height:30rem;
+    width: 30vw ;
+    height:30vw;
     margin: 0 6.6rem 0 6.6rem;
     background: radial-gradient(var(--color2) 20%, var(--color1) 60%);
-    /* border-radius: 10rem; */
     filter:blur(3rem);
     overflow: hidden;
 }
 .gradnt + .gradnt{
-    margin: 10rem 0 0  20rem;
+    margin: 10vw 0 0  20vw;
     background: radial-gradient(var(--color2) 20%, var(--color1) 40%);
 }
 
-@media (max-width:1280px){
-    /* header{
-        height:5vh;
-        padding-top: 3rem;
-    }
-    header nav, header div, header nav ul{
-        display:flex;
-        list-style-type: none;
-        justify-content: center;   
-    }
-    header nav div, header nav ul li, header button {
-        cursor:pointer;
-    }
-    header nav{
-        padding-bottom: 1rem;
-        border-bottom: var(--color2) solid 1px;
-    }
-    header nav div{
-        font-size: 1.5rem;
-        font-weight: bolder;
-    }
-    header nav div span{
-        color: var(--color3);
-    }
-    header nav ul{
-        margin: 0 20rem 0 30rem;
-    }
-    header nav ul li{
-        margin-left: 1rem;
-        transition: 1s ease-in-out;
-        
-    }
-    header nav ul li:hover{
-        color: var(--color3);
-        text-decoration: underline;
-    }
-    header button {
-        background: var(--primary);
-        color: inherit;
-        width: 7%;
-        border: var(--primary) solid 1px;
-        border-radius: 5%;
-        background-size: 120%; 
-        transition: background-position 1s ease-in-out; 
-    }
-    header button:hover {
-        background-position: right; 
-    }
-     */
+
+/*1. Responsive Min_1024px and Max_1200px*/
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    
+    
+}
+/*2. Responsive Min_991px and Max_1023px*/
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+    
+}
+/*3. Responsive Min_768px and Max_992px*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+}
+/*4. Responsive Min_480px and Max_767px*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    
+}
+/*5. Responsive Min_320px and Max_480px*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+}
+/*6. Responsive Max_319px*/
+@media only screen and (max-width: 319px) {
+    
 }
