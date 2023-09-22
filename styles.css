@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+@import url('href="https://fonts.googleapis.com/css?family=Digital+7&display=swap"');
+
+*{
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+:root{
+    --primary: linear-gradient(to right,#D434FE,#903AFF);
+    --negatePrimary: linear-gradient(to left,#D434FE,#903AFF);
+    --color1: #150E20;
+    --color2: #903AFF;
+    --color3: #D434FE;
+}
+body{
+    background:var(--color1);
+    background-size: 100px 100px; 
+    color: #fff;
+    /* overflow-x: hidden; */
+}
+header{
+    height:5vh;
+    padding-top: 3rem;
+}
+header nav, header div, header nav ul{
+    display:flex;
+    list-style-type: none;
+    justify-content: center;   
+}
+header nav div, header nav ul li, header button {
+    cursor:pointer;
+}
+header nav{
+    padding-bottom: 1rem;
+    border-bottom: var(--color2) solid 1px;
+}
+header nav div{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+header nav div span{
+    color: var(--color3);
+}
+header nav ul{
+    margin: 0 20rem 0 30rem;
+}
+header nav ul li{
+    margin-left: 1rem;
+    transition: 1s ease-in-out;
+    
+}
+header nav ul li:hover{
+    color: var(--color3);
+    text-decoration: underline;
+}
+header button {
+    background: var(--primary);
+    color: inherit;
+    width: 7%;
+    border: var(--primary) solid 1px;
+    border-radius: 5%;
+    background-size: 120%; 
+    transition: background-position 1s ease-in-out; 
+}
+header button:hover {
+    background-position: right; 
+}
+
+main section{
+    padding:2rem 8rem 0 6.6rem;
+    border-bottom: var(--color2) solid 1px;
+    height:95vh;
+    overflow: hidden !important;
+}
+main section .moto{
+    text-align: end;
+    font-size: 2.4rem;
+    font-style: italic;
+    padding:2rem 0 0 6.6rem;
+} 
+main section  .Hero{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+main section  .Hero div:first-child{
+    padding-top:10rem ;
+}
+main section  .Hero .heroIntro {
+    font-size: 5rem;
+}
+main section .heroIntro span{
+    color: var(--color3)
+}
+main section .Hero img{
+    width:13%;
+}
+main section .Hero .para{
+    font-size: 1.3rem;
+    width: 80%;
+}
+main section .timer{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+main section .timer span{
+    font-size: .8rem;
+    font-family: 'Digital-7', sans-serif;
+    margin-right: 1rem;
+}
+main section .Hero .heroImage{
+    background-image: url(images/Untitled-1-removebg-preview.png); 
+    background-repeat: no-repeat, no-repeat;
+    background-size:54rem;
+    background-position: left;
+    width:100vw;
+    height:90vh
+}
+main section .Hero .heroImage img{
+    width:50%;
+    margin-top: -5rem;
+    opacity: .5
+}
+main .subSection{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+main .subSection div img{
+    width:90%;
+}
+main .subSection div h2{
+    margin: 15rem 0 1rem 0;
+}
+main .subSection div img{
+    margin-top: 7rem;
+}
+main .subSection:nth-last-child(7) div h2, main .subSection:nth-last-child(6) div h2, main .subSection:nth-last-child(3) div h2, main .subSection:nth-last-child(1) div h2{
+    margin-top: 3rem;
+}
+main .subSection:nth-last-child(1) div p{
+    width:55%;
+}
+main .subSection div h2 span{
+    color: var(--color3)
+}
+main .subSection div p{
+    width: 85%;
+    text-align: justify;
+}
+main .subSection div p span{
+    color: var(--color3);
+    font-weight: bold;
+}
+
+main .subSection div .faq{
+    margin: 4rem 0 0 0;
+}
+main .subSection div .faq .faqs{
+    margin-top: 2rem;
+    width: 80%;
+    height: 3rem;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    border-bottom: var(--color3) solid 1.5px;
+}
+main .subSection div .faq .faqs p{
+    width:95%
+}
+main .subSection div .faq .faqs span{
+    text-align: end;
+    color: var(--color3);
+    cursor:pointer;
+}
+main .timeline{
+    height: 110vh;
+}
+main .timeline h3, main .timeline p{
+    text-align: center;
+}
+
+main .timeline .timetabe{
+    display:grid;
+    grid-template-columns: 45% 10% 45%;
+    margin-top: 10rem;
+}
+main .timeline .timetabe .time1 div, main .timeline .timetabe .time3 div {
+    margin-bottom: 3rem;
+}
+main .timeline .timetabe .time1,main .timeline .time1 h3, main .timeline .time1 p{
+    text-align: end;
+}
+main .timeline .timetabe .time1 div h3{
+    color: var(--color3);
+}
+main .timeline .timetabe div:nth-child(2){
+    text-align: center;
+}
+main .timeline .timetabe div:nth-child(2) .line{
+    width:.3rem;
+    height:75vh;
+    background: var(--color3);
+    margin: -5rem 0 0 4.2rem;
+    position: absolute;
+    z-index: -1;
+}
+main .timeline .timetabe div:nth-child(2) div{
+    margin-bottom: 3rem;
+}
+main .timeline .timetabe div:nth-child(2) div .number{
+    border: var(--color1) solid 10px;
+    border-radius: 100%;
+    background: var(--primary);
+    margin:0 2.2rem;
+    padding: .5rem .2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+main .timeline .timetabe .time3{
+    margin-top: 2rem;
+}
+main .timeline .timetabe .time3 div h3, main .timeline .timetabe .time3 div p{
+    text-align: left;
+}
+main .timeline .timetabe .time3 div h3{
+    color:var(--color3)
+}
+main .PandP{
+    text-align: center;
+   
+}
+main .PandP h2, main .PandP p{
+    margin:0 30%;
+}
+main .PandPcon{
+    margin: 4rem 10rem;
+    border: var(--color3) solid 1px;
+    border-radius: 2rem;
+    width:80%;
+    height:50vh;
+}
+main .PandPcon img{
+    margin: -2rem 0 0 -2rem;
+    width:70rem;
+}
+#subsec{
+    height:120vh;
+}
+#subsec div:nth-child(2){
+    background-image: url(images/Untitled-2-removebg-preview.png);
+    background-repeat:  no-repeat, no-repeat;
+    background-size: 31rem;
+
+}
+main .subSection .firstPara p{
+    margin-bottom: 2rem;
+}
+main .subSection .firstPara .PPandT{
+    border: var(--color3) solid 1px;
+    border-radius: 2rem;
+    width:70%;
+    height:55vh;
+    padding:5rem;
+}
+main .subSection .firstPara .PPandT p{
+    width:100%
+}
+main .subSection .firstPara .PPandT h3{
+    color:var(--color3)
+}
+main .subSection .firstPara .PPandT ul li{
+    margin-bottom: 1rem;
+}
+#faqImage{
+    margin-top: -8rem;
+}
+#readMore{
+    width:22%;
+    margin: 1rem 10rem
+}
+footer{
+    padding:2rem 8rem 0 6.6rem;
+    width: 100%;
+
+}
+footer .footing{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+footer .footing div{
+    margin: 0 10rem 0 0
+}
+footer .footing div .Fpara{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+footer .footing div .Fpara span{
+    color: var(--color3);
+}
+footer .footing .Fmore1 p{
+    margin-top: 1rem;
+}
+footer .footing .Fmore1 span{
+    color:var(--color3);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+footer .copyRight{
+    margin:2rem 20%;
+}
+
+/* Special Effects */
+.btn{
+    background: var(--primary);
+    color: inherit;
+    font-size: 1rem;
+    width: 20%;
+    margin-top: 1.5rem;
+    padding:.5rem;
+    border: var(--primary) solid 1px;
+    border-radius: 5%;
+    background-size: 120%; 
+    transition: background-position 1s ease-in-out;
+    cursor: pointer;
+}
+.btn:hover{
+    background-position: right; 
+}
+.gradient{
+    display:flex;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    position:absolute;
+    overflow: hidden;
+    z-index: -1;
+}
+.gradient div{
+    width: 30rem ;
+    height:30rem;
+    margin: 0 6.6rem 0 6.6rem;
+    background: radial-gradient(var(--color2) 20%, var(--color1) 60%);
+    /* border-radius: 10rem; */
+    filter:blur(3rem);
+    overflow: hidden;
+}
+.gradnt + .gradnt{
+    margin: 10rem 0 0  20rem;
+    background: radial-gradient(var(--color2) 20%, var(--color1) 40%);
+}
+
+@media (max-width:1280px){
+    /* header{
+        height:5vh;
+        padding-top: 3rem;
+    }
+    header nav, header div, header nav ul{
+        display:flex;
+        list-style-type: none;
+        justify-content: center;   
+    }
+    header nav div, header nav ul li, header button {
+        cursor:pointer;
+    }
+    header nav{
+        padding-bottom: 1rem;
+        border-bottom: var(--color2) solid 1px;
+    }
+    header nav div{
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+    header nav div span{
+        color: var(--color3);
+    }
+    header nav ul{
+        margin: 0 20rem 0 30rem;
+    }
+    header nav ul li{
+        margin-left: 1rem;
+        transition: 1s ease-in-out;
+        
+    }
+    header nav ul li:hover{
+        color: var(--color3);
+        text-decoration: underline;
+    }
+    header button {
+        background: var(--primary);
+        color: inherit;
+        width: 7%;
+        border: var(--primary) solid 1px;
+        border-radius: 5%;
+        background-size: 120%; 
+        transition: background-position 1s ease-in-out; 
+    }
+    header button:hover {
+        background-position: right; 
+    }
+     */
+}
