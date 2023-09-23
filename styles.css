@@ -71,7 +71,7 @@ header button:hover {
 }
 
 main section{
-    padding:2rem 8rem 0 6.6rem;
+    padding:2rem 8vw 0 6.6vw;
     border-bottom: var(--color2) solid 1px;
     height:95vh;
     overflow: hidden !important;
@@ -84,7 +84,7 @@ main section .moto{
 } 
 main section  .Hero{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(38vw, 1fr));
 }
 main section  .Hero div:first-child{
     padding-top:10vw ;
@@ -130,7 +130,7 @@ main .subSection{
 }
 
 main .subSection div img{
-    width:35vw;
+    width:39vw;
 }
 main .subSection div h2{
     margin: 15vw 0 1vw 0;
@@ -150,6 +150,7 @@ main .subSection div h2 span{
 main .subSection div p{
     width: 35vw;
     text-align: justify;
+    margin-top:3vw;
 }
 main .subSection div p span{
     color: var(--color3);
@@ -284,6 +285,9 @@ main .subSection .firstPara .PPandT ul li{
     width:10vw;
     margin: 1vw 10vw
 }
+.div_fix{
+    margin-left:5vh
+}
 footer{
     padding:2vw 8vw 0 6.6vw;
     width: 100vw;
@@ -291,7 +295,7 @@ footer{
 }
 footer .footing{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(38vw, 1fr));
 }
 footer .footing div{
     margin: 0 10vw 0 0
@@ -335,7 +339,7 @@ footer .copyRight{
 }
 .gradient{
     display:flex;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(38vw, 1fr));
     position:absolute;
     overflow: hidden;
     z-index: -1;
@@ -356,7 +360,12 @@ footer .copyRight{
 
 /*1. Responsive Min_1024px and Max_1200px*/
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-    
+    main .subSection{
+        font-size: 1.2vw;
+    }
+    main .timeline{
+        height: 140vh;
+    }
     
 }
 /*2. Responsive Min_991px and Max_1023px*/
@@ -365,7 +374,170 @@ footer .copyRight{
 }
 /*3. Responsive Min_768px and Max_992px*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    main section .moto{
+        text-align: center;
+        font-size: 4vw;
+        font-style: italic;
+        padding:2rem 0 0 6.6rem;
+    } 
+    main section  .Hero{
+        display:block;
+        text-align: center;
+    }
+    main section  .Hero .heroIntro {
+        font-size: 10vw;
+    }
+    main section .Hero .para{
+        font-size: 2rem;
+        width: 80vw;
+    }
+    main section .timer{
+        font-size: 10vw;
+        margin-top: 1.5vw;
+    }
+    main section .timer span{
+        font-size: 3vw;
+        margin-right: 1vw;
+    }
+    main section .Hero .heroImage{
+        background-size:77vw;
+        width:100vw;
+        height:90vh;
+        margin-top: -23vh;
+    }
+    main section .Hero .heroImage img{
+        width:70vw;
+        margin: 28vw 0 0 -20vw;
+        opacity: .5;
+    }
+    main .subSection{
+        display: block;
+        text-align: center;
+    }
+    main .subSection div img{
+        width:69vw;
+    }
+    main .subSection div h2{
+        margin: 15vw 0 1vw -10vw;
+        font-size: 4.5vw;
+    }
+    main .subSection div p{
+        width: 70vw;
+        font-size: 2vw;
+        text-align: center;
+    }
+    .media__height{
+        height:110vh;
+    }
+    #faqSection{
+        height:130vh;
+    }
+    #faqSection #faqImage{
+        margin-top: 2vw;
+    }
+    main .subSection div .faq .faqs{
+        margin-top: 2vw;
+        width: 70vw;
+        height: 6vh;
+        display: grid;
+        grid-template-columns: 90% 10%;
+        border-bottom: var(--color3) solid 1.5px;
+    }
+    main .subSection div .faq .faqs p{
+        text-align: left;
+        width:60vw;
+    }
+    /* timeline */
+    main .timeline #timelineh3{
+        font-size: 4vw;
+    }
+    main .timeline #timelinePara{
+        font-size: 2vw;
+    }
+    main .timeline .timetabe{
+        display:block;
+    }
+    main .timeline .timetabe .time1{
+        margin-top: 45vw;
+        position: relative;
+    }
+    main .timeline .timetabe .time1 div p{
+
+    }
+    main .timeline .timetabe .time1 div h3,main .timeline .timetabe .time1 div p{
+        text-align: left;
+        margin-left: 7vw;
+    }
+    main .timeline .timetabe .time1 div h3{
+        margin-top: 3vw;
+    }
+    main .timeline .timetabe div:nth-child(2){
+        margin-top: -46vw;
+        position:relative
+    }
+    main .timeline .timetabe div:nth-child(2) .line{
+        height:60vh;
+        margin: -5vw 0 0 3.2vw;
+        position: absolute;
+        z-index: -1;
+    }
+    main .timeline .timetabe div:nth-child(2) div .number{
+        margin:10vw 79vw 0 0 ;
+        padding: .6vw .3vw;
+    }
+    main .timeline .timetabe .time3{
+        margin: 6vw 0 0 7vw;
+    }
+    /* timeline */
+
+    main .PandP h2{
+        font-size: 3vw !important;
+    }
+    main .PandP h2, main .PandP p{
+        margin:0 10vw;
+        width:70vw;
+        font-size: 2vw;
+    }
+    main .PandPcon{
+    margin: 4vw 5vw;
+    border: var(--color3) solid 1px;
+    border-radius: 2rem;
+    width:75vw;
+    height:20vh;
+    }
+    .media__height__reduce{
+        height:40vh
+    }
+    main .PandPcon img{
+        margin: -2vw 0 0 -2vw;
+        width:80vw;
+    }
+    #subsec{
+        height:140vh;
+    }
+    #subsec div:nth-child(2){
+        background-size: 60vw;
     
+    }
+    main .subSection .firstPara .Paras{
+        width: 74vw;
+    }
+    main .subSection .firstPara .PPandT{
+        width:58vw;
+        height:39vh;
+        padding:5vw;
+        text-align: left;
+    }
+    main .subSection .firstPara .PPandT p{
+        width:58vw;
+        margin-bottom: 2vh;
+    }
+    main .subSection .firstPara .PPandT h3{
+        text-align: left;
+    }
+    main .subSection .firstPara .PPandT ul li{
+        margin-bottom: 1vw;
+    }
 }
 /*4. Responsive Min_480px and Max_767px*/
 @media only screen and (min-width: 481px) and (max-width: 767px) {
