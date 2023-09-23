@@ -84,7 +84,7 @@ header nav div img{
 main section{
     padding:2rem 8vw 0 6.6vw;
     border-bottom: var(--color2) solid 1px;
-    height:95vh;
+    height:93vh;
     overflow: hidden !important;
 }
 main section .moto{
@@ -144,7 +144,7 @@ main section .Hero img{
     width:5vw;
 }
 main section .Hero .para{
-    font-size: 1.3rem;
+    font-size: 1.3vw;
     width: 40vw;
 }
 main section .timer{
@@ -316,6 +316,7 @@ main .subSection .firstPara .PPandT{
 }
 main .subSection .firstPara .PPandT p{
     width:28vw;
+    margin-top: 1vw;
     margin-bottom: 2vh;
 }
 main .subSection .firstPara .PPandT h3{
@@ -413,6 +414,25 @@ footer .copyRight{
     main .timeline{
         height: 140vh;
     }
+    main .subSection .firstPara .PPandT{
+        border: var(--color3) solid 1px;
+        border-radius: 2rem;
+        width:28vw;
+        height:59vh;
+        padding:5vw !important;
+    }
+    main .subSection .firstPara .PPandT p{
+        width:28vw;
+        margin-top: 1vw !important;
+        margin-bottom: 2vh;
+    }
+    main .subSection .firstPara .PPandT h3{
+        color:var(--color3)
+    }
+    main .subSection .firstPara .PPandT ul li{
+        margin-bottom: 1vw;
+    }
+
     
 }
 /*2. Responsive Min_991px and Max_1023px*/
@@ -512,7 +532,7 @@ footer .copyRight{
     }
     main section .Hero .para{
         margin-left: 2rem;
-        font-size: 2rem;
+        font-size: 3vw;
         width: 80vw;
     }
     main section .timer{
@@ -800,7 +820,7 @@ footer .copyRight{
     }
     main section .Hero .para{
         margin-left: 2rem;
-        font-size: 2rem;
+        font-size: 3vw;
         width: 80vw;
     }
     main section .timer{
@@ -1092,7 +1112,7 @@ footer .copyRight{
     }
     main section .Hero .para{
         margin-left: 2rem;
-        font-size: 2rem;
+        font-size: 3vw;
         width: 80vw;
     }
     main section .timer{
@@ -1118,6 +1138,7 @@ footer .copyRight{
         display: block;
         text-align: center;
         height:70vh;
+        margin-left: 7vw;
     }
     main .subSection div img{
         width:69vw;
@@ -1133,7 +1154,7 @@ footer .copyRight{
     }
     .media__height{
         height:90vh !important;
-        margin-left: -5vw;
+        margin-left: -5vw !important;
     }
     #faqSection{
         height:100vh;
@@ -1156,12 +1177,14 @@ footer .copyRight{
     /* timeline */
     main .timeline{
         width:80vw;
+        height:70vh !important;
     }
     main .timeline #timelineh3{
-        font-size: 4vw;
+        font-size: 2vw !important;
+        color: red !important;
     }
     main .timeline #timelinePara{
-        font-size: 2vw;
+        font-size: 2vw !important;
     }
     main .timeline .timetabe{
         display:block;
@@ -1187,13 +1210,13 @@ footer .copyRight{
         font-size: 2vw;
     }
     main .timeline .timetabe div:nth-child(2) .line{
-        height:70vh;
+        height:46vh;
         margin: -5vw 0 0 2.2vw;
         position: absolute;
         z-index: -1;
     }
     main .timeline .timetabe div:nth-child(2) div .number{
-        margin:10vw 74vw 0 -2vw ;
+        margin:8vw 74vw 0 -2vw ;
         padding: .6vw .3vw;
     }
     main .timeline .timetabe .time3{
@@ -1228,9 +1251,7 @@ footer .copyRight{
     .media__height__reduce{
         height:40vh;
     }
-    /* .media__height__reduce .img_animation4{
-        margin-left: 2vw;
-    } */
+    
     main .PandPcon{
         height:14vh;
     }
@@ -1294,5 +1315,297 @@ footer .copyRight{
 }
 /*6. Responsive Max_319px*/
 @media only screen and (max-width: 319px) {
+    header{
+        position: fixed;
+        height:4vh;
+        padding-top: 6vw;
+        z-index: 999;
+        background: var(--color1);
+        width:100vw
+    }
+    header nav, header div, header nav ul{
+        display:flex;
+        list-style-type: none;
+        justify-content: left;   
+        padding-left: 5vw;
+    }
+    header nav div{
+        font-size: 3vw;
+        font-weight: bolder;
+    }
+    header nav ul{
+        opacity: 0;
+        display:block;
+        font-size: 3vw;
+        position:absolute;
+        background: var(--color1);
+        padding:10vw 25vw 20vw 10vw;
+        line-height: 7vw;
+        border:var(--color3) solid 1px;
+        border-radius: 2vw;
+        margin: -8vw 0 0 100vw;
+        /* margin: -8vw 0 0 30vw !important; */
+        transition: 2s ease-in-out;
+    }
+
+    .active{
+        opacity: 1;
+        display: block !important;
+        margin: -8vw 0 0 20vw !important;
+        transition: 2s ease-in-out;
+    }
+    header nav ul img{
+        display: block;
+        width: 5vw;
+        margin: 0 0 0 40vw;
+        transition: 2s ease-in-out;
+    }
+    header nav ul button{
+        display:block;
+        width:30vw;
+        height:7vh;
+        font-size: 3vw;
+        margin-top: 4vw;
+    }
+    header nav ul li{
+        /* text-align: center;         */
+    }
+    header button{
+        display:none
+    }
+    header nav div {
+        width:40vw;
+    }
+    header nav div img{
+        display: block;
+        width:6vw;
+        margin-left: 20vw;;
+
+        justify-content: end;
+    }
+    main section .moto{
+        margin-left: -25vw;
+        width:90vw
+    }
+    main section .Hero{
+        margin-left: -5vw;
+    }
+    main section{
+        height:80vh !important
+    }
+    main section .moto{
+        text-align: center;
+        font-size: 4vw;
+        font-style: italic;
+        padding:2rem 0 0 6.6rem;
+        margin-top: 7vw;
+    } 
+    main section  .Hero{
+        display:block;
+        text-align: center;
+    }
+    main section  .Hero .heroIntro {
+        font-size: 10vw;
+    }
+    main section .Hero .para{
+        margin-left: 2rem;
+        font-size: 3vw;
+        width: 80vw;
+    }
+    main section .timer{
+        font-size: 15vw;
+        margin-top: 1.5vw;
+    }
+    main section .timer span{
+        font-size: 3vw;
+        margin-right: 1vw;
+    }
+    main section .Hero .heroImage{
+        background-size:77vw;
+        width:100vw;
+        height:90vh;
+        margin-top: -23vh;
+    }
+    main section .Hero .heroImage img{
+        width:70vw;
+        margin: 49vw 0 0 -20vw;
+        opacity: .5;
+    }
+    main .subSection{
+        display: block;
+        text-align: center;
+        height:70vh;
+        margin-left: 7vw;
+    }
+    main .subSection div img{
+        width:69vw;
+    }
+    main .subSection div h2{
+        margin: 15vw 0 1vw -10vw;
+        font-size: 4.5vw;
+    }
+    main .subSection div p{
+        width: 70vw;
+        font-size: 2vw;
+        text-align: center;
+    }
+    .media__height{
+        height:80vh !important;
+        margin-left: -5vw !important;
+    }
+    #faqSection{
+        height:100vh !important;
+    }
+    #faqSection #faqImage{
+        margin-top: 2vw;
+    }
+    main .subSection div .faq .faqs{
+        margin-top: 2vw;
+        width: 70vw;
+        height: 6vh;
+        display: grid;
+        grid-template-columns: 90% 10%;
+        border-bottom: var(--color3) solid 1.5px;
+    }
+    main .subSection div .faq .faqs p{
+        text-align: left;
+        width:60vw;
+    }
+    /* timeline */
+    main .timeline{
+        width:80vw;
+        height:80vh !important;
+    }
+    #timelineh3{
+        font-size: 2vw !important;
+    }
+    main .timeline #timelinePara{
+        font-size: 1vw !important;
+    }
+    main .timeline .timetabe{
+        display:block;
+    }
+    main .timeline .timetabe .time1{
+        margin-top: 65vw;
+        position: relative;
+    }
+    main .timeline .timetabe .time1 div p{
+    }
+    main .timeline .timetabe .time1 div h3,main .timeline .timetabe .time1 div p{
+        text-align: left;
+        margin-left: 7vw;
+        font-size: 2vw;
+    }
+    main .timeline .timetabe .time1 div h3{
+        margin-top: 3vw;
+        font-size: 2vw;
+    }
+    main .timeline .timetabe div:nth-child(2){
+        margin-top: -66vw;
+        position:relative;
+        font-size: 2vw;
+    }
+    main .timeline .timetabe div:nth-child(2) .line{
+        height:46vh;
+        margin: -5vw 0 0 2.2vw;
+        position: absolute;
+        z-index: -1;
+    }
+    main .timeline .timetabe div:nth-child(2) div .number{
+        margin:8vw 74vw 0 -2vw ;
+        padding: .6vw .3vw;
+    }
+    main .timeline .timetabe .time3{
+        margin: 15vw 0 0 7vw;
+        font-size: 2vw;
+    }
+    /* timeline */
+    main .media__fix{
+        height:80vh !important
+    }
+    main .media__fix div p{
+        margin-left: 10vw;
+    }
+    main .media__fix__img{
+        margin-left: -5vw;
+    }
+    main .PandP h2{
+        font-size: 3vw !important;
+    }
+    main .PandP h2, main .PandP p{
+        margin:0 -5vw 0 0;
+        width:70vw;
+        font-size: 2vw;
+    }
+    main .PandPcon{
+    margin: 4vw 0;
+    border: var(--color3) solid 1px;
+    border-radius: 2rem;
+    width:75vw;
+    height:20vh;
+    }
+    .media__height__reduce{
+        height:30vh !important;
+    }
     
+    main .PandPcon{
+        height:14vh;
+    }
+    main .PandPcon img{
+        margin: -2vw 0 0 -2vw;
+        width:80vw;
+    }
+    #subsec{
+        height:110vh !important;
+    }
+    #subsec div:nth-child(2){
+        background-size: 60vw;
+    
+    }
+    main .subSection .firstPara .Paras{
+        width: 74vw;
+    }
+    main .subSection .firstPara .PPandT{
+        width:58vw;
+        height:40vh;
+        padding:5vw;
+        text-align: left;
+    }
+    main .subSection .firstPara .PPandT p{
+        width:58vw;
+        margin-bottom: 2vh;
+    }
+    main .subSection .firstPara .PPandT h3{
+        text-align: left;
+    }
+    main .subSection .firstPara .PPandT ul li{
+        margin-bottom: 1vw;
+        font-size: 2vw;
+    }
+    #readMore{
+        width:15vw;
+        margin: 1vw 10vw
+    }
+    .btn{
+        background: var(--primary);
+        color: inherit;
+        font-size: 2.5vw;
+        width: 20vw;
+        height:5vh;
+        margin-top: 1.5vw;
+        padding:.5vw;
+        border: var(--primary) solid 1px;
+        border-radius: 5%;
+        background-size: 120vw; 
+        transition: background-position 1s ease-in-out;
+        cursor: pointer;
+    }
+    .gradient div{
+        /* width: 50vw ; */
+        height:30vw;
+        margin: 0 6.6rem 0 6.6rem;
+        background: radial-gradient(var(--color2) 20%, var(--color1) 60%);
+        filter:blur(3rem);
+        overflow: hidden;
+    }   
 }
