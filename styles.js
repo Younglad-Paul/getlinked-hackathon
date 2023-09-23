@@ -6,14 +6,13 @@ document.querySelector(".baring_button_remove").addEventListener("click", () => 
     document.querySelector(".menu").classList.remove("active")
 })
 
-const targetDate = new Date("2023-12-31 00:00:00").getTime();
+const targetDate = new Date("2023-12-31T00:00:00").getTime(); // Updated target date
 
 const countdown = setInterval(function() {
     const currentDate = new Date().getTime();
     const timeLeft = targetDate - currentDate;
 
-    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const hours = Math.floor(timeLeft / (1000 * 60 * 60));
     const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
