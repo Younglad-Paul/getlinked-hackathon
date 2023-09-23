@@ -1,0 +1,109 @@
+.Remove__animation{
+    transition: 2s ease-in-out !important;
+    margin-left: -50vw !important;
+    opacity: 0 !important;
+}
+
+.Remove_img_animation{
+    transition: 2s ease-in-out !important;
+    margin-left: 50vw !important;
+    opacity: 0 !important;
+}
+
+.Remove__animation2{
+    transition: 2s ease-in-out !important;
+    margin-left: -50vw !important;
+    opacity: 0 !important;
+}
+.Remove_img_animation2{
+    transition: 2s ease-in-out !important;
+    margin-left: 50vw !important;
+    opacity: 0 !important;
+}
+.Remove__animation3{
+    transition: 2s ease-in-out !important;
+    margin-left: -50vw !important;
+    opacity: 0 !important;
+}
+.Remove_img_animation3{
+    transition: 2s ease-in-out !important;
+    margin-left: 50vw !important;
+    opacity: 0 !important;
+}
+.Remove__animation4{
+    transition: 2s ease-in-out !important;
+    margin-top: -50vw !important;
+    opacity: 0 !important;
+}
+.Remove_img_animation4{
+    transition: 2s ease-in-out !important;
+    margin-top: 50vw !important;
+    opacity: 0 !important;
+}
+.Remove__animation5{
+    transition: 2s ease-in-out !important;
+    margin-left: -50vw !important;
+    opacity: 0 !important;
+}
+.Remove_img_animation5{
+    transition: 2s ease-in-out !important;
+    margin-left: 50vw !important;
+    opacity: 0 !important;
+}
+.Remove__animation6{
+    transition: 2s ease-in-out !important;
+    opacity: 0 !important;
+}
+/* .Remove_img_animation6{
+    transition: 2s ease-in-out !important;
+    opacity: 0 !important;
+} */
+.Remove__animation7{
+    transition: 4s ease-in-out !important;
+    margin-left: -50vw !important;
+    opacity: 0 !important;
+}
+.Remove_img_animation7{
+    transition: 2s ease-in-out !important;
+    margin-left: 50vw !important;
+    opacity: 0 !important;
+}
+.Remove__animation8{
+    transition: 2s ease-in-out !important;
+    opacity: 0 !important;
+}
+.Remove__animation9{
+    transition: 2s ease-in-out !important;
+    margin-left: -50vw !important;
+    opacity: 0 !important;
+}
+.Remove_img_animation9{
+    transition: 2s ease-in-out !important;
+    margin-left: 50vw !important;
+    opacity: 0 !important;
+}
+.animation{
+    opacity: 1 !important;
+    margin-left: 0 !important;
+    transition: 2s ease-in-out !important;
+}
+.img_animation_Hero{
+    opacity: 1 !important;
+    margin-left: -2vw !important;
+    transition: 2s ease-in-out !important;
+}
+.img_animation{
+    opacity: 1 !important;
+    margin-left: 0vw !important;
+    transition: 2s ease-in-out !important;
+}
+.animation4{
+    opacity: 1 !important;
+    margin-top: 0 !important;
+    transition: 2s ease-in-out !important;
+}
+.img_animation4{
+    transition: 2s ease-in-out !important;
+    margin-top: 5vw !important;
+    opacity: 1 !important;
+}

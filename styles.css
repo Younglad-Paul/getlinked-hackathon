@@ -17,7 +17,8 @@ body{
     background:var(--color1);
     background-size: 100vw 100vw; 
     color: #fff;
-    /* overflow-x: hidden; */
+    opacity: 1;
+    overflow-x: hidden;
 }
 header{
     height:5vh;
@@ -91,7 +92,41 @@ main section .moto{
     font-size: 2.4vw;
     font-style: italic;
     padding:2rem 0 0 6.6rem;
+    opacity:0;
+    transition: 3s ease-in-out;
 } 
+.motoAnime {
+    opacity: 1 !important;
+    background: linear-gradient(to left, var(--color2), var(--color3));
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    transition: background-position 1s ease-in-out;
+    cursor: pointer;
+    animation: fashion 4s linear infinite; 
+}
+
+@keyframes fashion {
+    0% {
+        background-position: 100% 0; 
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+@-moz-keyframes fashion {
+    0% {
+        background-position: 100% 0; 
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+
 main section  .Hero{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(38vw, 1fr));
@@ -277,7 +312,7 @@ main .subSection .firstPara .PPandT{
     border-radius: 2rem;
     width:28vw;
     height:59vh;
-    padding:5vw;
+    padding:5vw !important;
 }
 main .subSection .firstPara .PPandT p{
     width:28vw;
@@ -384,7 +419,7 @@ footer .copyRight{
     
 }
 /*3. Responsive Min_768px and Max_992px*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px){
     header{
         position: fixed;
         height:4vh;
@@ -404,7 +439,8 @@ footer .copyRight{
         font-weight: bolder;
     }
     header nav ul{
-        display: block;
+        opacity: 0;
+        display:block;
         font-size: 3vw;
         position:absolute;
         background: var(--color1);
@@ -412,12 +448,22 @@ footer .copyRight{
         line-height: 7vw;
         border:var(--color3) solid 1px;
         border-radius: 2vw;
-        /* margin: -8vw 0 0 30vw; */
         margin: -8vw 0 0 100vw;
+        /* margin: -8vw 0 0 30vw !important; */
+        transition: 2s ease-in-out;
+    }
+
+    .active{
+        opacity: 1;
+        display: block !important;
+        margin: -8vw 0 0 30vw !important;
+        transition: 2s ease-in-out;
     }
     header nav ul img{
+        display: block;
         width: 5vw;
         margin: 0 0 0 40vw;
+        transition: 2s ease-in-out;
     }
     header nav ul button{
         display:block;
@@ -443,6 +489,13 @@ footer .copyRight{
         justify-content: end;
     }
     main section .moto{
+        margin-left: -15vw;
+        width:90vw
+    }
+    main section .Hero{
+        margin-left: -5vw;
+    }
+    main section .moto{
         text-align: center;
         font-size: 4vw;
         font-style: italic;
@@ -457,11 +510,12 @@ footer .copyRight{
         font-size: 10vw;
     }
     main section .Hero .para{
+        margin-left: 2rem;
         font-size: 2rem;
         width: 80vw;
     }
     main section .timer{
-        font-size: 10vw;
+        font-size: 15vw;
         margin-top: 1.5vw;
     }
     main section .timer span{
