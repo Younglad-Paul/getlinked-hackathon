@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="animation.css">
 </head>
 <body>
+    <div class="loading">
+        <img  src="images/loading1.webp">
+    </div>
+    
     <div class="gradient">
         <div class="gradnt"></div>
         <div class="gradnt"></div>
     </div>
     <header>
         <nav>
-            <div><a href="/">get<span>linked</span></a></div>
+            <div><a href="index.html">get<span>linked</span></a></div>
             <ul class="menu">
                 <img src="images/bae3.png" class="baring_button_remove">
                 <li>Timeline</li>
@@ -260,7 +264,6 @@
         </div>
         <div class="div_fix Remove_img_animation9 " >
             <img src="images/Untitled-4.png">
-            <!-- <img src="images/Untitled-2-removebg-preview.png"> -->
         </div>
     </section>
     </main>
@@ -290,5 +293,15 @@
         <p class="copyRight">All rights reserved @getlinked Ltd.</p>
     </footer>
     <script src="styles.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const loader = document.querySelector(".loading");
+    if (loader) {
+        loader.classList.remove("loader");
+        loader.style.display = "none";
+    }
+});
+
+    </script>
 </body>
 </html>

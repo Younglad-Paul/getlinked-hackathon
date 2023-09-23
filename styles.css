@@ -20,6 +20,18 @@ body{
     opacity: 1;
     overflow-x: hidden;
 }
+.loading{
+    width:100vw;
+    height:100vh;
+    background: #ffff;
+    padding:20vw 40vw;
+    position:fixed;
+    z-index: 999;
+    overflow: hidden;
+}
+.loading img{
+    width:20vw;
+}
 header{
     height:5vh;
     padding-top: 3vw;
@@ -347,7 +359,7 @@ main .subSection .firstPara .PPandT ul li{
 }
 .contactDiv .snippet{
     font-size: 1.2vw;
-    margin: 10vh 15vh;
+    margin: 10vh 15vh !important;
 }
 .contactDiv .snippet h2, .contactDiv .snippet h4{
     color:var(--color3)
@@ -636,7 +648,7 @@ footer .copyRight{
         width: 80vw;
     }
     main section .timer{
-        font-size: 15vw;
+        font-size: 8vw;
         margin-top: 1.5vw;
     }
     main section .timer span{

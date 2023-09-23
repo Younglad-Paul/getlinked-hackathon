@@ -6,7 +6,7 @@ document.querySelector(".baring_button_remove").addEventListener("click", () => 
     document.querySelector(".menu").classList.remove("active")
 })
 
-const targetDate = new Date("2023-12-31T00:00:00").getTime(); // Updated target date
+const targetDate = new Date("2023-12-31T00:00:00").getTime();
 
 const countdown = setInterval(function() {
     const currentDate = new Date().getTime();
