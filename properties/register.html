@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../animation.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Register | getlinked</title>
 </head>
 <body>
@@ -80,5 +81,28 @@
         </div>
     </section>
     <script src="../styles.js"></script>
+    <script>
+axios.get('{{baseUrl}}/hackathon/categories-list')
+    .then(response => {
+        const categorySelect = document.getElementById('category');
+        categorySelect.innerHTML = '';
+
+        const defaultOption = document.createElement('option');
+        defaultOption.value = 'NaO';
+        defaultOption.textContent = 'Select your category';
+        categorySelect.appendChild(defaultOption);
+
+        response.data.forEach(category => {
+            const option = document.createElement('option');
+            option.value = category.id;
+            option.textContent = category.name;
+            categorySelect.appendChild(option);
+        });
+    })
+    .catch(error => {
+        console.error('Error fetching category options:', error);
+    });
+
+    </script>
 </body>
 </html>

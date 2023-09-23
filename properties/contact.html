@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../animation.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Contact | getlinked</title>
 </head>
 <body>
@@ -52,5 +53,20 @@
         </div>
     </section>
     <script src="../styles.js"></script>
+    <script>
+        axios.post('{{baseUrl}}/hackathon/contact-form', {
+    email: emailValue,
+    first_name: firstNameValue,
+    message: messageValue
+})
+.then(response => {
+    
+    console.log('API response:', response.data);
+})
+.catch(error => {
+    console.error('API error:', error);
+});
+
+    </script>
 </body>
 </html>
