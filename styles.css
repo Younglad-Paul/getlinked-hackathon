@@ -28,6 +28,10 @@ header nav, header div, header nav ul{
     list-style-type: none;
     justify-content: center;   
 }
+header nav ul button{
+    display: none;
+}
+
 header nav div, header nav ul li, header button {
     cursor:pointer;
 }
@@ -47,6 +51,9 @@ header nav div a span{
 }
 header nav ul{
     margin: 0 17vw 0 30vw;
+}
+header nav ul img{
+    display:none;
 }
 header nav ul li{
     margin-left: 1vw;
@@ -68,6 +75,9 @@ header button {
 }
 header button:hover {
     background-position: right; 
+}
+header nav div img{
+    display:none;
 }
 
 main section{
@@ -127,6 +137,7 @@ main section .Hero .heroImage img{
 main .subSection{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(38vw, 1fr));
+    height: 120vh;
 }
 
 main .subSection div img{
@@ -295,7 +306,7 @@ footer{
 }
 footer .footing{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(38vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
 }
 footer .footing div{
     margin: 0 10vw 0 0
@@ -374,11 +385,69 @@ footer .copyRight{
 }
 /*3. Responsive Min_768px and Max_992px*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    header{
+        position: fixed;
+        height:4vh;
+        padding-top: 6vw;
+        z-index: 999;
+        background: var(--color1);
+        width:100vw
+    }
+    header nav, header div, header nav ul{
+        display:flex;
+        list-style-type: none;
+        justify-content: left;   
+        padding-left: 5vw;
+    }
+    header nav div{
+        font-size: 3vw;
+        font-weight: bolder;
+    }
+    header nav ul{
+        display: block;
+        font-size: 3vw;
+        position:absolute;
+        background: var(--color1);
+        padding:10vw 25vw 20vw 10vw;
+        line-height: 7vw;
+        border:var(--color3) solid 1px;
+        border-radius: 2vw;
+        /* margin: -8vw 0 0 30vw; */
+        margin: -8vw 0 0 100vw;
+    }
+    header nav ul img{
+        width: 5vw;
+        margin: 0 0 0 40vw;
+    }
+    header nav ul button{
+        display:block;
+        width:30vw;
+        height:7vh;
+        font-size: 3vw;
+        margin-top: 4vw;
+    }
+    header nav ul li{
+        /* text-align: center;         */
+    }
+    header button{
+        display:none
+    }
+    header nav div {
+        width:40vw;
+    }
+    header nav div img{
+        display: block;
+        width:6vw;
+        margin-left: 20vw;;
+
+        justify-content: end;
+    }
     main section .moto{
         text-align: center;
         font-size: 4vw;
         font-style: italic;
         padding:2rem 0 0 6.6rem;
+        margin-top: 7vw;
     } 
     main section  .Hero{
         display:block;
@@ -538,6 +607,30 @@ footer .copyRight{
     main .subSection .firstPara .PPandT ul li{
         margin-bottom: 1vw;
     }
+    .btn{
+        background: var(--primary);
+        color: inherit;
+        font-size: 2.5vw;
+        width: 20vw;
+        height:5vh;
+        margin-top: 1.5vw;
+        padding:.5vw;
+        border: var(--primary) solid 1px;
+        border-radius: 5%;
+        background-size: 120vw; 
+        transition: background-position 1s ease-in-out;
+        cursor: pointer;
+    }
+    .gradient div{
+        /* width: 50vw ; */
+        height:30vw;
+        margin: 0 6.6rem 0 6.6rem;
+        background: radial-gradient(var(--color2) 20%, var(--color1) 60%);
+        filter:blur(3rem);
+        overflow: hidden;
+    }
+    
+    
 }
 /*4. Responsive Min_480px and Max_767px*/
 @media only screen and (min-width: 481px) and (max-width: 767px) {
