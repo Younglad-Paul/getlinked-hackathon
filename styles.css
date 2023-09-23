@@ -58,10 +58,13 @@ header nav ul img{
 }
 header nav ul li{
     margin-left: 1vw;
-    transition: 1s ease-in-out;
-    
+    transition: 1s ease-in-out;   
 }
-header nav ul li:hover{
+header nav ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+header nav ul li:hover, header nav ul li a:hover, .focus{
     color: var(--color3);
     text-decoration: underline;
 }
@@ -335,21 +338,118 @@ main .subSection .firstPara .PPandT ul li{
 .div_fix{
     margin-left:5vh
 }
+
+/* contact page */
+.contactDiv{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    padding:5vw
+}
+.contactDiv .snippet{
+    font-size: 1.2vw;
+    margin: 10vh 15vh;
+}
+.contactDiv .snippet h2, .contactDiv .snippet h4{
+    color:var(--color3)
+}
+.contactDiv .snippet p{
+    margin: 1vw 0 1vw 0;
+}
+.contactDiv .form__body{
+    background: rgba(255,255,255, 4%);
+    width: 30vw;
+    height: 55vh;
+    border-radius: 5%;
+    padding:5vw
+
+}
+.contactDiv .form__body form input{
+    width:30vw;
+    background: transparent;
+    border: #fff solid 2px;
+    border-radius: .5rem;
+    height:4vh;
+    margin: 1vw 0 1vw 0 ;
+    padding:.5vw;
+}
+.contactDiv .form__body form textarea{
+    width:30vw;
+    background: transparent;
+    border: #fff solid 2px;
+    border-radius: .5rem;
+    height:15vh;
+    margin: 1vw 0 1vw 0 ;
+    padding:.5vw;
+}
+.contactDiv .form__body form p{
+    font-size: 1.5vw;
+    color: var(--color3)
+}
+.contact__btn{
+    margin:0 0 0 10vw;
+}
+/* end contact page */
+/* registration page */
+.regDiv{
+    padding:7vw;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+}
+.reg__form{
+    background: rgba(255,255,255, 4%);
+    width: 30vw;
+    height: 55vh;
+    border-radius: 5%;
+    padding:5vw
+}
+.reg__form h2{
+    color:var(--color3);
+    margin: -2vw 0 1vw 0
+}
+.reg__form .emphasised{
+    font-size: 1.5vw;
+}
+.reg__form form div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr));
+    margin-top: 2vw;
+}
+.reg__form form div label input{
+    width:13vw;
+    background: transparent;
+    border: #fff solid 2px;
+    border-radius: .5rem;
+    height:4vh;
+    margin: 1vw 0 1vw 0 ;
+    padding:.5vw;
+    color:#fff;
+}
+.reg__form form div label select{
+    width:14vw;
+    background: transparent;
+    border: #fff solid 2px;
+    border-radius: .5rem;
+    height:5vh;
+    margin: 1vw 0 1vw 0 ;
+    padding:.5vw;
+    color:var(--color3);
+}
+/* end registration page */
 footer{
     padding:2vw 8vw 0 6.6vw;
     width: 100vw;
-    font-size: 2vw;
+    font-size: 1vw;
 
 }
 footer .footing{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
 }
 footer .footing div{
     margin: 0 10vw 0 0
 }
 footer .footing div .Fpara{
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: bolder;
     margin-bottom: 1vw;
 }
@@ -721,8 +821,106 @@ footer .copyRight{
         filter:blur(3rem);
         overflow: hidden;
     }
-    
-    
+
+    /* contact page */
+.contactDiv{
+    display:block;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    padding:20vw 10vw;
+}
+.contactDiv .snippet{
+    display: none;
+}
+.contactDiv .form__body{
+    background: rgba(255,255,255, 4%);
+    width: 70vw;
+    height: 50vh;
+    border-radius: 5%;
+    padding:5vw
+
+}
+.contactDiv .form__body form input{
+    width:65vw;
+    background: transparent;
+    border: #fff solid 2px;
+    border-radius: .5rem;
+    height:4vh;
+    margin: 2vw 0 2vw 0 ;
+    padding:1vw;
+}
+.contactDiv .form__body form textarea{
+    width:65vw;
+    background: transparent;
+    border: #fff solid 2px;
+    border-radius: .5rem;
+    height:15vh;
+    margin: 2vw 0 2vw 0 ;
+    padding:1vw;
+}
+.contactDiv .form__body form p{
+    font-size: 3vw;
+    color: var(--color3)
+}
+.contact__btn{
+    margin:0 0 0 25vw
+}
+
+/* end contact page */
+/* registration page */
+.menu__media__fix{
+    width:70vw;
+}
+.regDiv{
+    padding:7vw;
+    display:block;
+}
+.reg__form{
+    background: rgba(255,255,255, 4%);
+    width: 50vw;
+    height: 37vh;
+    border-radius: 5%;
+    padding:5vw
+}
+.reg__form h2{
+    color:var(--color3);
+    margin: -2vw 0 1vw 0
+}
+.reg__form .emphasised{
+    font-size: 1.5vw;
+}
+.reg__form form div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    margin-top: 2vw;
+}
+.reg__form form div label input{
+    width:20vw;
+    background: transparent;
+    border: #fff solid 2px;
+    border-radius: .5rem;
+    height:4vh;
+    margin: 1vw 0 1vw 0 ;
+    padding:.5vw;
+    color:#fff;
+}
+.reg__form form div label select{
+    width:22vw;
+    background: transparent;
+    border: #fff solid 2px;
+    border-radius: .5rem;
+    height:5vh;
+    margin: 1vw 0 1vw 0 ;
+    padding:.5vw;
+    color:var(--color3);
+}
+.btn2{
+    margin:1vw 0 0 12vw;
+}
+/* end registration page */
+    footer .footing{
+        display: block;
+        width:50vw;
+    }
 }
 /*4. Responsive Min_480px and Max_767px*/
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -1608,4 +1806,8 @@ footer .copyRight{
         filter:blur(3rem);
         overflow: hidden;
     }   
+}
+button a{
+    text-decoration: none;
+    color:#fff
 }
