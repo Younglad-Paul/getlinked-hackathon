@@ -9,6 +9,10 @@
     <title>Register | getlinked</title>
 </head>
 <body>
+    <div class="loading">
+        <img  src="images/loading1.webp">
+    </div>
+    
     <div class="gradient">
         <div class="gradnt"></div>
         <div class="gradnt"></div>
@@ -82,6 +86,14 @@
     </section>
     <script src="../styles.js"></script>
     <script>
+   document.addEventListener("DOMContentLoaded", function () {
+    const loader = document.querySelector(".loading");
+    if (loader) {
+        loader.classList.remove("loader");
+        loader.style.display = "none";
+    }
+});
+
 axios.get('{{baseUrl}}/hackathon/categories-list')
     .then(response => {
         const categorySelect = document.getElementById('category');
